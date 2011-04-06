@@ -9,6 +9,7 @@ class PostingsController < ApplicationController
     if current_user
       @posting.email = current_user.email
       @posting.display_name = current_user.name
+      @gituser = Octopi::User.find(current_user.nickname)
     end
   end
   

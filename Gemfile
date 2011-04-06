@@ -8,6 +8,7 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "simple_form"
 gem "twitter"
+gem "octopi"
 
 gem 'omniauth'
 

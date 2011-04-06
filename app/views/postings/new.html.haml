@@ -6,6 +6,19 @@
   and
   = link_to 'Code Katas', 'http://codekata.pragprog.com/', :target => '_blank'
   
+#git-repos
+  Repository:
+  = if current_user
+    = @gituser.repositories.each do |r|
+
+      = r.name 
+      -
+      = r.description
+      by
+      = r.owner
+      - 
+      = r.url
+  
 #posting-area
   = simple_form_for @posting do |f|
   

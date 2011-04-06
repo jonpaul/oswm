@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
       user.provider    = auth["provider"]
       user.uid         = auth["uid"].to_s
       user.name        = auth["user_info"]["name"]
+      user.nickname    = auth["user_info"]["nickname"]
       user.email       = auth["user_info"]["email"]
       user.gravatar_id = auth["extra"]["user_hash"]["gravatar_id"]
     end
